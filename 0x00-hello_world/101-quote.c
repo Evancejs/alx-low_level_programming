@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
 * main - prints input followed by a new line, to the standard error
 *
