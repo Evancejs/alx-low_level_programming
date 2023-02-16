@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main() - prints out given input using the puts()
-(* stdio.h:  C standard library that contains declarations for standard input/output operations)*
-* Return: this function returns 0 as instructed
+* main - prints out given input
+*
+* Return: 0
 */
 int main(void)
 {
