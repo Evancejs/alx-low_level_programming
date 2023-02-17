@@ -1,19 +1,28 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 /**
-* main - prints the alphabet azAZ, followed by a new line 
+* main - prints the alphabet azAZ, followed by a new line
 *
 * Return: 0
 */
 int main(void)
 {
-	char letter, capital;
+	int letter = 'a';
+	int capital = 'A';
 
-	for (letter = 'a', capital = 'A'; letter <= 'z'; letter++, capital++)
+	while (letter <= 'z')
 	{
-		putchar(letter);
-		putchar(capital);
+	putchar(letter);
+	letter++;
+	}
+
+	while (capital <= 'Z')
+	{
+	putchar(capital);
+	capital++;
 	}
 
 	putchar('\n');
-	return 0;
+	return (0);
 }
