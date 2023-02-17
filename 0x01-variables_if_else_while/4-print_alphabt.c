@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 /**
-* main - prints the alphabet azAZ, followed by a new line
+* main - prints the alphabet , skips q & e
 *
 * Return: 0
 */
@@ -12,14 +12,14 @@ int main(void)
 
 	while (letter <= 'z')
 	{
-		if (letter == 'q' || letter == 'e')
+		if (letter != 'q' && letter != 'e')
 		{
-		continue;
+			putchar(letter);
 		}
-	putchar(letter);
 	letter++;
+	
 	}
-
+	
 	putchar('\n');
-	return (0);
+	return 0;
 }
