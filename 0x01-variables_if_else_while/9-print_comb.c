@@ -6,23 +6,15 @@
 */
 int main(void)
 {
-	int i = 0, j;
+	int i = 0;
 
 	while (i < 10)
 	{
-	j = i;
-		while (j < 10)
-		{
-		putchar((i * 10 + j) / 10 + '0');
-		putchar((i * 10 + j) % 10 + '0');
-			if (j < 9)
-			{
-			putchar(',');
-			putchar(' ');
-			}
-		j++;
-		}
+	putchar(i + '0');
+	putchar(',');
+	putchar(' ')
 	i++;
 	}
+	putchar(i + '0');
 	return (0);
 }
