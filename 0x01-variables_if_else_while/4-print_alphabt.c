@@ -15,11 +15,12 @@ int main(void)
 		if (letter == 'q' || letter == 'e')
 		{
 		continue;
+		letter++;
 		}
 	putchar(letter);
 	letter++;
 	}
-	
+
 	putchar('\n');
-	return 0;
+	return (0);
 }
