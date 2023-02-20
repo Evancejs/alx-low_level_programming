@@ -4,10 +4,11 @@
 *
 * Return: 0
 */
-int main()
+int main(void)
 {
 	int i = 0;
 	int j = 0;
+
 	while (i <= 99)
 	{
 		while (j <= 99)
@@ -30,5 +31,5 @@ int main()
 	i++;
 	j = 0;
 	}
-	return 0;
+	return (0);
 }
