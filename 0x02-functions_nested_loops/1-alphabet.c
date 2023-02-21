@@ -1,9 +1,6 @@
 #include "main.h"
 /**
-* main - prints alphabet a-z
-*
-* Return: 0
-*
+* print_alphabet - prints alphabet a-z
 */
 void print_alphabet(void)
 {
