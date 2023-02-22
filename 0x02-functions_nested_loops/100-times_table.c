@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_times_table - prints the n times table starting from 0 to n*n
+ * @n: the integer entered by user
  */
 void print_times_table(int n)
 {
@@ -24,7 +25,7 @@ void print_times_table(int n)
 			}
 			else
 			{
-			printf("%4d", result);
+			printf(" %3d", result);
 			}
 		}
 	printf("\n");
