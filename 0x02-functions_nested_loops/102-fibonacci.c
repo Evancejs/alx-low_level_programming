@@ -7,17 +7,18 @@
 *
 * Return: 0
 */
-int main()
+int main(void)
 {
-	int num1 = 1, num2 = 2;
+	long long num1 = 1, num2 = 2;
 	int count = 2;
-	printf("%d, %d, ", num1, num2);
+
+	printf("%lld, %lld, ", num1, num2);
 
 	while (count < 50)
 	{
-		int next_num = num1 + num2;
+		long long next_num = num1 + num2;
 
-		printf("%d, ", next_num);
+		printf("%lld, ", next_num);
 
 		num1 = num2;
 		num2 = next_num;
