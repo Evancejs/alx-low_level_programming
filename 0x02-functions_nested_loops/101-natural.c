@@ -1,8 +1,10 @@
 #include <stdio.h>
-/* main - This program computes and prints the sum of all the multiples of 3 or 5 below 1024 (excluded).
- * It does so by iterating over all numbers from 0 to 1023, and checking if each number is a multiple of 3 or 5.
- * If a number is a multiple of 3 or 5, its value is added to the total sum.
- * Finally, the total sum is printed to the console, followed by a new line.
+/*
+ * main(void) - Computes and prints the sum of multiples of 3 or 5 below 1024.
+ * @sum: holds the sum of all multiples of 3 or 5 below 1024
+ * @i: is 0;
+ *
+ * return 0
  */
 int main(void)
 {
