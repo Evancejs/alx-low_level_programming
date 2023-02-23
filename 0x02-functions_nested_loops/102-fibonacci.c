@@ -20,7 +20,7 @@ int main(void)
 	{
 		int64_t next_num = num1 + num2;
 
-		printf("%ld, ", next_num);
+		printf(", %ld", next_num);
 
 		num1 = num2;
 		num2 = next_num;
