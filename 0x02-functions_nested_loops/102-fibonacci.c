@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <inttypes.h>
 /**
 *main - prints all combinations of 0-9
 *@num1 and @num2 - set values of the first two numbers
@@ -13,13 +14,13 @@ int main(void)
 	int64_t	num1 = 1, num2 = 2;
 	int count = 2;
 
-	printf("%lld, %lld, ", num1, num2);
+	printf("%ld, %ld, ", num1, num2);
 
 	while (count < 50)
 	{
 		int64_t next_num = num1 + num2;
 
-		printf("%lld, ", next_num);
+		printf("%ld, ", next_num);
 
 		num1 = num2;
 		num2 = next_num;
