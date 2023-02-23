@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 /**
 *main - prints all combinations of 0-9
 *@num1 and @num2 - set values of the first two numbers
@@ -9,14 +10,14 @@
 */
 int main(void)
 {
-	long long num1 = 1, num2 = 2;
+	int64_t	num1 = 1, num2 = 2;
 	int count = 2;
 
 	printf("%lld, %lld, ", num1, num2);
 
 	while (count < 50)
 	{
-		long long next_num = num1 + num2;
+		int64_t next_num = num1 + num2;
 
 		printf("%lld, ", next_num);
 
