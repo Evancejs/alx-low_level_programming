@@ -9,7 +9,7 @@
 
 #define PASSWORD_LENGTH 10
 
-char *generate_password(void)
+char generate_password(void)
 {
 	int i = 0;
 
