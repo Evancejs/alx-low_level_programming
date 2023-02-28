@@ -29,3 +29,9 @@ char *generate_password(void)
 
 	return (password);
 }
+
+int main(void)
+{
+	printf("%s\n", generate_password());
+	return (0);
+}
