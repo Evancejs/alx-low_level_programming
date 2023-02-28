@@ -11,13 +11,13 @@
 
 char *generate_password(void)
 {
+	int i = 0;
+
 	static char password[PASSWORD_LENGTH + 1];
 	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	const int charset_size = sizeof(charset) - 1;
 
 	srand(time(NULL));
-
-	int i = 0;
 
 	while (i < PASSWORD_LENGTH)
 	{
