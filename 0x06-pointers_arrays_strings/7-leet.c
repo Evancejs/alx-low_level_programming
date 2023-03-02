@@ -12,8 +12,6 @@ char *leet(char *str)
 	char *ptr = str;
 	char *leet_letters = "aAeEoOtTlL";
 	char *leet_codes = "4433007711";
-	char *leet_ptr;
-	char *code_ptr;
 
 	while (*ptr)
 	{
