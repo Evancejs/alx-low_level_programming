@@ -1,33 +1,37 @@
 #include "main.h"
 /**
-* _strspn - locates a character in a string
-* @s: string input
-* @accept: character its memory to be located
-*
-*Return: a pointer (s) to the 1st occurrence of c in the string s
-* or NULL if the character is not found
-*/
+ * _strspn - gets the length of a prefix substring
+ * @s: string to search
+ * @accept: characters to search for in s
+ *
+ * Return: number of bytes in the initial segment of
+ * s which consist only of bytes from accept
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	int match_found = 1;
 
-	while (*s && match_found)
+	unsigned int i, j, count = 0;
+	int found;
+
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		match_found = 0;
-		char *a = accept;
-
-		while (*a)
+	found = 0;
+	j = 0;
+	while (accept[j] != '\0')
+	{
+		if (s[i] == accept[j])
 		{
-			if (*s == *a)
-			{
-				count++;
-				match_found = 1;
-				break;
-			}
-			a++;
+		count++;
+		found = 1;
+		break;
 		}
-		s++;
+	j++;
+	}
+	if (!found)
+		break;
+	i++;
 	}
 
 	return (count);
