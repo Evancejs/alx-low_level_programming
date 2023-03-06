@@ -1,28 +1,31 @@
 #include "main.h"
 /**
-* _strstr -  searches a string for any of a set of bytes
-* @haystack: string input
-* @needle: bytes
-*
-*Return: a pointer to the byte in s that matches one of
-* the bytes in accept, or NULL if no such byte is found
-*/
+ * _strstr - finds the first occurrence of th
+ * e substring needle in the string haystack
+ * @haystack: the string to search
+ * @needle: the substring to search for
+ *
+ * Return: pointer to the beginning of th
+ * e located substring, or NULL if not found
+ */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	int i, j;
+
+	if (*needle == '\0')
+		return (haystack);
+
+	while (*haystack != '\0')
 	{
-		char *h = haystack;
-		char *n = needle;
-
-		while (*h == *n && *n)
+		i = 0;
+		j = 0;
+		while (haystack[i] == needle[j] && needle[j] != '\0')
 		{
-			h++;
-			n++;
+			i++;
+			j++;
 		}
-
-		if (*n == '\0')
+		if (needle[j] == '\0')
 			return (haystack);
-
 		haystack++;
 	}
 
