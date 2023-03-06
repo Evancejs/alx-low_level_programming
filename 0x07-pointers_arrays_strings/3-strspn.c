@@ -15,8 +15,9 @@ unsigned int _strspn(char *s, char *accept)
 	while (*s && match_found)
 	{
 		match_found = 0;
+		char *a = accept;
 
-		for (char *a = accept; *a; a++)
+		while (*a)
 		{
 			if (*s == *a)
 			{
@@ -24,8 +25,10 @@ unsigned int _strspn(char *s, char *accept)
 				match_found = 1;
 				break;
 			}
+			a++;
 		}
 		s++;
 	}
+
 	return (count);
 }
