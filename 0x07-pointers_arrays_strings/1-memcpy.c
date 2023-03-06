@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _memcpy -  fills memory with a constant byte
+* _memcpy - copies memory area
 * @dest: gets input
 * @src: constant bytes value
 * @n:  bytes of the memory area pointed to s
