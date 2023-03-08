@@ -2,10 +2,10 @@
 /**
 * is_prime_number -  returns 1 if n is a prime number else 0
 * @n: input integer
-* @2: checks starts at 2
+* @i: checks starts at 2
 *Return: 1 if n is a prime number else 0
 */
-int is_prime_number(int n, i = 2)
+int is_prime_number(int n, int i = 2)
 {
 
 	if (n <= 1)
