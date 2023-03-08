@@ -5,8 +5,9 @@
 * @i: checks starts at 2
 *Return: 1 if n is a prime number else 0
 */
-int is_prime_number(int n, int i = 2)
+int is_prime_number(int n, int i)
 {
+	i = 2;
 
 	if (n <= 1)
 	{
