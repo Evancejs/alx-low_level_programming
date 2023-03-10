@@ -9,11 +9,9 @@
  *
  * Return: 0 on success, non-zero on failure
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	char *program_name = argv[0];
-
-	(void)argc;
 
 	while (*program_name)
 	{
@@ -24,16 +22,4 @@ int main(int argc, char *argv[])
 	_putchar('\n');
 
 	return (0);
-}
-
-/**
- * _putchar - Writes a character to stdout
- * @c: The character to write
- *
- * Return: On success, the number of characters written.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (putchar(c));
 }
