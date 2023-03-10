@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stddef.h>
 #include "main.h"
 /**
  * main - Entry point of the program
@@ -12,6 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
+	(void) argv;
+
 	int num_args = argc - 1;
 	int digit, divisor = 1;
 
@@ -27,5 +28,5 @@ int main(int argc, char *argv[])
 
 	_putchar('\n');
 
-	return (EXIT_SUCCESS);
+	return (0);
 }
