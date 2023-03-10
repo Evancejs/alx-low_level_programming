@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
 
 	result = num1 * num2;
 
-	/* Print the result */
 	i = 1;
 	if (result < 0)
 	{
