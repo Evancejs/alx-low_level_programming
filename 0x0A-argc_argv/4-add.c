@@ -1,74 +1,54 @@
 #include <stdio.h>
-#include <stddef.h>
-#include "main.h"
-
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
- * main - Adds positive numbers
- * @argc: The number of arguments
- * passed to the program
- * @argv: An array of pointers to the arguments
+ * check_num - check if there are digits in a string
+ * @str: string to check
  *
- * Return: 0 if successful, 1 if any
- * argument contains symbols that are not digits
+ * Return: 1 if all characters in the string are digits, otherwise 0
  */
-int main(int argc, char *argv[])
+int check_num(char *str)
 {
-	int sum = 0, digit, i, j;
+	unsigned int count = 0;
 
-	if (argc == 1)
+	while (count < strlen(str))
 	{
-		_putchar('0');
-		_putchar('\n');
-		return (0);
-	}
+		if (!isdigit(str[count]))
+			return (0);
 
-	for (i = 1; i < argc; i++)
-	{
-		j = 0;
-		while (argv[i][j])
-		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
-			{
-				_putchar('E');
-				_putchar('r');
-				_putchar('r');
-				_putchar('o');
-				_putchar('r');
-				_putchar('\n');
-				return (1);
-			}
-			j++;
-		}
-
-		digit = 0;
-		while (*argv[i])
-			digit = digit * 10 + (*argv[i]++ - '0');
-
-		sum += digit;
+		count++;
 	}
-	if (sum == 0)
-		_putchar('0');
-	else
-	{
-		if (sum < 0)
-		{
-			_putchar('-');
-			sum = -sum;
-		}
-		print_number(sum);
-	}
-	_putchar('\n');
-	return (0);
+	return (1);
 }
 
 /**
- * print_number - Prints an integer
- * @n: The integer to print
+ * main - Prints the sum of command line arguments that are numbers
+ * @argc: number of arguments
+ * @argv: array of pointers to arguments
+ *
+ * Return: 0 on success, 1 on error
  */
-void print_number(int n)
+int main(int argc, char *argv[])
 {
-	if (n / 10)
-		print_number(n / 10);
+	int count, str_to_int, sum = 0;
 
-	_putchar((n % 10) + '0');
+	count = 1;
+	while (count < argc)
+	{
+		if (check_num(argv[count]))
+		{
+			str_to_int = atoi(argv[count]);
+			sum += str_to_int;
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
+	}
+	printf("%d\n", sum);
+
+	return (0);
 }
