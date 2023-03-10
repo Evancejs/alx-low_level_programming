@@ -13,20 +13,7 @@ int main(int argc, char *argv[])
 {
 	(void) argv;
 
-	int num_args = argc - 1;
-	int digit, divisor = 1;
-
-	while (num_args / divisor > 9)
-		divisor *= 10;
-
-	while (divisor >= 1)
-	{
-		digit = (num_args / divisor) % 10;
-		_putchar(digit + '0');
-		divisor /= 10;
-	}
-
-	_putchar('\n');
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
