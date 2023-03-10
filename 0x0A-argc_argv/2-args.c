@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stddef.h>
 #include "main.h"
 /**
  * main - Entry point of the program
@@ -27,5 +26,5 @@ int main(int argc, char *argv[])
 		i++;
 	}
 
-	return (EXIT_SUCCESS);
+	return (0);
 }
