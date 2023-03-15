@@ -16,7 +16,7 @@ char *_strdup(char *str)
 {
 	unsigned int len = 0;
 	char *new_str;
-	unsigned int i = 0;
+	unsigned int i;
 
 	if (str == NULL)
 	{
@@ -35,7 +35,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (unsigned int i = 0; i <= len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		new_str[i] = str[i];
 	}
