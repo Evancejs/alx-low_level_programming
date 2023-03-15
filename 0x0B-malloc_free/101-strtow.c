@@ -54,7 +54,7 @@ int find_word_length(char *str)
  *
  * Return: void
  */
-void free_grid(int **grid, int height)
+void free_grid(char **grid, int height)
 {
 	int i;
 
