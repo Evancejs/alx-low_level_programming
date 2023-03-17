@@ -10,7 +10,7 @@
  */
 int multiply(const char *num1, const char *num2)
 {
-	int len1 = 0, len2 = 0, i, j, k, carry = 0, sum;
+	int len1 = 0, len2 = 0, i, j, carry = 0, sum;
 	int *result;
 
 	while (num1[len1])
