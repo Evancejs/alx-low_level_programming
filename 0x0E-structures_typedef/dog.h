@@ -6,7 +6,8 @@
  * @age: Second member
  * @owner: Third member
  *
- * Description:  a new type struct dog with the following elements; name,age&owner
+ * Description:  a new type struct dog with the following elements
+ * ; name,age&owner
  */
 struct dog
 {
