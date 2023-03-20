@@ -1,6 +1,8 @@
-#ifndef OBJECT_LIKE_MACRO.H
-#define OBJECT_LIKE_MACRO.H
+#ifndef SIZE_H
+#define SIZE_H
 
-#define SIZE 1024
+/* Macro computes the value of SIZE */
 
-#endif /* OBJECT_LIKE_MACRO.H */
+#define SIZE (1024)
+
+#endif /* SIZE.H */
